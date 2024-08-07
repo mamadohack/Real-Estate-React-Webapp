@@ -1,11 +1,11 @@
 import './App.css'
-
+import HomePage from './pages/homepage'
 function App() {
   
 
   return (
     <>
-      <div className='bg-red-500 w-96 min-h-screen'>real estate app</div>
+      <HomePage></HomePage>
     </>
   )
 }

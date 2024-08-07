@@ -1,3 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* :root {
+  --WHITE_90: #E4E4E7;
+  --WHITE_95: #F1F1F3;
+  --WHITE_97: #F7F7F8;
+  --WHITE_99: #FCFCFD;
+  --ABSOLUTE_WHITE: #FFFFFF;
+  --ABSOLUTE_BLACK: #000000;
+  --PURPLE_60: #703BF7;
+  --PURPLE_65: #8254F8;
+  --PURPLE_70: #946CF9;
+  --PURPLE_75: #A685FA;
+  --PURPLE_90: #DBCEFD;
+  --PURPLE_95: #EDE7FE;
+  --PURPLE_97: #F4F0FE;
+  --PURPLE_99: #FBFAFF;
+  --GREY_08: #141414;
+  --GREY_10: #1A1A1A;
+  --GREY_15: #262626;
+  --GREY_20: #333333;
+  --GREY_30: #4D4D4D;
+  --GREY_40: #666666;
+  --GREY_50: #808080;
+  --GREY_60: #999999;
+} */
+* {
+  font-family: "Urbanist", sans-serif;
+}
+svg {
+  display: inline-block;
+}
