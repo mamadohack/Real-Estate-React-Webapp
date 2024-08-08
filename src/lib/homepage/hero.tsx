@@ -1,7 +1,7 @@
 import "./hero.css";
 function Hero() {
   return (
-    <section id="hero" className="bg-grey-08 pb-20">
+    <section id="hero" className="bg-grey-08 ">
       <div className="flex gap-10 flex-wrap xl:flex-nowrap max-w-[1280px] ms-auto">
         <div className="xl:w-1/2 py-14">
           {/* <div className='relative max-w-[300px]'>
@@ -56,8 +56,12 @@ function Hero() {
           </div>
         </div>
         <div className="xl:w-1/2  relative bg-grey-10 overflow-hidden ">
-        <img src="Abstract Design hero.svg" className="absolute top-0 left-0 object-cover object-right min-h-[550px]  " alt="" />
-        <img src="hero.png" alt="hero image" className="relative " />
+        <div className="" style={{
+          background: "no-repeat url('Abstract Design hero.svg')",
+          
+          backgroundPositionX: "center",
+          backgroundPositionY:"35%"
+        }}><img src="hero.png" alt="hero image" className="relative " /></div>
         </div>
       </div>
       <div className="flex gap-2 p-2 border-y-4 border-grey-15">
