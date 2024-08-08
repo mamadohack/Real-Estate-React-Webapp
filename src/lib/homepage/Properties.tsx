@@ -1,6 +1,6 @@
 function Properties() {
   return (
-    <section className="px-5 py-10 lg:px-20">
+    <section className="px-5 pt-10 lg:px-20">
       <div className="space-x-2">
         <svg
           width="24"
@@ -119,21 +119,23 @@ function Properties() {
         </svg>
       </div>
       <div className="mt-2">
-        <h2 className="font-semibold text-white text-[2.4rem]">
-          Featured Properties
-        </h2>
-        <h2 className="flex items-start justify-between mt-3 gap-10">
-          <span className="font-medium text-grey-60 leading-[150%] inline-block">
-            Explore our handpicked selection of featured properties. Each
-            listing offers a glimpse into exceptional homes and investments
-            available through Estatein. Click "View Details" for more
-            information.
-          </span>
+        <div className="flex items-end justify-between mt-3 gap-10">
+          <div>
+            <h2 className="font-semibold text-white text-[2.4rem]">
+              Featured Properties
+            </h2>
+            <span className="font-medium text-grey-60 leading-[150%] inline-block mt-2">
+              Explore our handpicked selection of featured properties. Each
+              listing offers a glimpse into exceptional homes and investments
+              available through Estatein. Click "View Details" for more
+              information.
+            </span>
+          </div>
 
-          <button className="text-sm text-white px-5 py-4 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
+          <button className="text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
             View All Properties
           </button>
-        </h2>
+        </div>
       </div>
       <main className="flex py-10 gap-2">
         <div className="w-1/3 p-5 border border-grey-15 rounded-[12px]">
