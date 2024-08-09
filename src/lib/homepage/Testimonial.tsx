@@ -137,7 +137,7 @@ function Testimonial() {
         </div>
       </div>
       <main className="flex py-10 gap-2">
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px]">
+        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
           <div className="gap-3 flex">
             <span className="rounded-full border border-grey-15 p-2 bg-grey-10">
               <svg
@@ -231,7 +231,7 @@ function Testimonial() {
             </span>
           </div>
         </div>
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px]">
+        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
           <div className="gap-3 flex">
             <span className="rounded-full border border-grey-15 p-2 bg-grey-10">
               <svg
@@ -329,7 +329,7 @@ function Testimonial() {
             </span>
           </div>
         </div>
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px]">
+        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
           <div className="gap-3 flex">
             <span className="rounded-full border border-grey-15 p-2 bg-grey-10">
               <svg

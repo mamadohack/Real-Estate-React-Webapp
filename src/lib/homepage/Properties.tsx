@@ -138,7 +138,7 @@ function Properties() {
         </div>
       </div>
       <main className="flex py-10 gap-2">
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px]">
+        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px] ">
           <img
             src="/property/property (1).png"
             className="object-cover rounded-[10px] h-[255px] w-full"
