@@ -33,3 +33,53 @@
 svg {
   display: inline-block;
 }
+.embla {
+  --gap-lg: 1.2rem;
+  --gap-sm: 1.6rem;
+  --gap: 1rem;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  margin-left: calc(var(--gap) * -1);
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding-left: var(--gap);
+}
+
+@media (min-width: 768px) {
+  .embla__container {
+    margin-left: calc(var(--gap-sm) * -1);
+  }
+  .embla__slide {
+    flex: 0 0 50%;
+    padding-left: var(--gap-sm);
+  }
+}
+
+@media (min-width: 1280px) {
+  .embla__container {
+    margin-left: calc(var(--gap-lg) * -1);
+  }
+  .embla__slide {
+    flex: 0 0 33.33%;
+    padding-left: var(--gap-lg);
+  }
+  /* .embla__slide:first-child {padding-left: 0px;} */
+}
+
+.bordery {
+  position: relative;
+}
+.bordery::after {
+  background-color: rgb(20 20 20);
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 30px;
+}

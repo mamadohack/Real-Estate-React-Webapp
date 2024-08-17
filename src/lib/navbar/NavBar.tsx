@@ -41,7 +41,7 @@ function NavBar() {
           </svg>
         </button>
       </nav>
-      <nav className=" px-5 xl:px-20 py-4 sticky top-0">
+      <nav className=" px-5 lg:px-20 2xl:px-40 py-4 sticky top-0">
         
           <div className="flex items-center justify-between flex-wrap">
             <a href="" className="">

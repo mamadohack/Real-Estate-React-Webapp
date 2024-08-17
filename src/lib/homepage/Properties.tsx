@@ -1,6 +1,7 @@
+import EmblaCarousel from "../utils/carousel";
 function Properties() {
   return (
-    <section className="px-5 pt-10 lg:px-20">
+    <section className="px-5 pt-10 xl:px-20 2xl:px-40">
       <div className="space-x-2">
         <svg
           width="24"
@@ -121,10 +122,10 @@ function Properties() {
       <div className="mt-2">
         <div className="flex items-end justify-between mt-3 gap-10">
           <div>
-            <h2 className="font-semibold text-white text-[2.4rem]">
+            <h2 className="font-semibold text-white text-3xl xl:text-[2.4rem]">
               Featured Properties
             </h2>
-            <span className="font-medium text-grey-60 leading-[150%] inline-block mt-2">
+            <span className="font-medium text-grey-60 leading-[150%] inline-block mt-2 ">
               Explore our handpicked selection of featured properties. Each
               listing offers a glimpse into exceptional homes and investments
               available through Estatein. Click "View Details" for more
@@ -132,232 +133,385 @@ function Properties() {
             </span>
           </div>
 
-          <button className="text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
+          <button className="text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max hidden xl:inline-block">
             View All Properties
           </button>
         </div>
       </div>
-      <main className="flex py-10 gap-2">
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px] ">
-          <img
-            src="/property/property (1).png"
-            className="object-cover rounded-[10px] h-[255px] w-full"
-            alt=""
-          />
-          <h2 className="mt-5 text-white text-xl font-semibold">
-            Seaside Serenity Villa
-          </h2>
-          <p className="mt-1 text-grey-60 font-medium">
-            A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
-            neighborhood...{" "}
-            <a href="" className="text-white underline text-sm">
-              Read More
-            </a>
-          </p>
-          <div className="space-x-1 space-y-2 mt-5">
-            <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+      <main className="pt-10 ">
+        <EmblaCarousel>
+          <div className="embla__slide">
+            <div className="p-5 border border-grey-15 rounded-[12px] ">
               <img
-                src="/property/icons/bedroom.svg"
+                src="/property/property (1).png"
+                className="object-cover rounded-[10px] h-[255px] w-full"
                 alt=""
-                className="inline-block"
               />
-              <span className="ms-1 text-sm font-medium text-white">
-                4-Bedroom
-              </span>
-            </span>
-            <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
-              <img
-                src="/property/icons/bathroom.svg"
-                alt=""
-                className="inline-block"
-              />
-              <span className="ms-1 text-sm font-medium text-white">
-                3-Bathroom
-              </span>
-            </span>
-            <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
-              <img
-                src="/property/icons/villa.svg"
-                alt=""
-                className="inline-block"
-              />
-              <span className="ms-1 text-sm font-medium text-white">Villa</span>
-            </span>
-          </div>
-          <div className="flex items-start justify-between mt-5 gap-2 xl:gap-10">
-            <div className="">
-              <h2 className="text-grey-60 font-meduim text-sm">Price</h2>
-              <h2 className="font-semibold text-xl text-white">$550,000</h2>
-            </div>
-            <div className="w-full">
-              <button className="w-full text-sm text-white font-medium  px-5 py-3.5 rounded-[8px] bg-purple-60">
-                View Property Details
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px]">
-          <img
-            src="/property/property (2).png"
-            className="object-cover rounded-[10px] h-[255px] w-full"
-            alt=""
-          />
-          <h2 className="mt-5 text-white text-xl font-semibold">
-            Metropolitan Haven
-          </h2>
-          <p className="mt-1 text-grey-60 font-medium">
-            A chic and fully-furnished 2-bedroom apartment with panoramic city
-            views...
-            <a
-              href=""
-              className="text-white underline text-sm ms-1 inline-block"
-            >
-              Read More
-            </a>
-          </p>
-          <div className="space-x-1 space-y-2 mt-5">
-            <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
-              <img
-                src="/property/icons/bedroom.svg"
-                alt=""
-                className="inline-block"
-              />
-              <span className="ms-1 text-sm font-medium text-white">
-                2-Bedroom
-              </span>
-            </span>
-            <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
-              <img
-                src="/property/icons/bathroom.svg"
-                alt=""
-                className="inline-block"
-              />
-              <span className="ms-1 text-sm font-medium text-white">
-                2-Bathroom
-              </span>
-            </span>
-            <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
-              <img
-                src="/property/icons/villa.svg"
-                alt=""
-                className="inline-block"
-              />
-              <span className="ms-1 text-sm font-medium text-white">Villa</span>
-            </span>
-          </div>
-          <div className="flex items-start justify-between mt-5 gap-2 xl:gap-10">
-            <div className="">
-              <h2 className="text-grey-60 font-meduim text-sm">Price</h2>
-              <h2 className="font-semibold text-xl text-white">$550,000</h2>
-            </div>
-            <div className="w-full">
-              <button className="w-full text-sm text-white font-medium  px-5 py-3.5 rounded-[8px] bg-purple-60">
-                View Property Details
-              </button>
+              <h2 className="mt-5 text-white text-xl font-semibold">
+                Seaside Serenity Villa
+              </h2>
+              <p className="mt-1 text-grey-60 font-medium">
+                A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
+                neighborhood...{" "}
+                <a href="" className="text-white underline text-sm">
+                  Read More
+                </a>
+              </p>
+              <div className="space-x-1 space-y-2 mt-5">
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bedroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    4-Bedroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bathroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    3-Bathroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/villa.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    Villa
+                  </span>
+                </span>
+              </div>
+              <div className="flex items-start justify-between mt-5 gap-2 xl:gap-10">
+                <div className="">
+                  <h2 className="text-grey-60 font-meduim text-sm">Price</h2>
+                  <h2 className="font-semibold text-xl text-white">$550,000</h2>
+                </div>
+                <div className="w-full">
+                  <button className="w-full text-sm text-white font-medium  px-5 py-3.5 rounded-[8px] bg-purple-60">
+                    View Property Details
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px]">
-          <img
-            src="/property/property (3).png"
-            className="object-cover rounded-[10px] h-[255px] w-full"
-            alt=""
-          />
-          <h2 className="mt-5 text-white text-xl font-semibold">
-            Rustic Retreat Cottage
-          </h2>
-          <p className="mt-1 text-grey-60 font-medium">
-            An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
-            <a
-              href=""
-              className="text-white underline text-sm inline-block ms-1"
-            >
-              Read More
-            </a>
-          </p>
-          <div className="space-x-1 space-y-2 mt-5">
-            <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+          <div className="embla__slide">
+            <div className="p-5 border border-grey-15 rounded-[12px] ">
               <img
-                src="/property/icons/bedroom.svg"
+                src="/property/property (2).png"
+                className="object-cover rounded-[10px] h-[255px] w-full"
                 alt=""
-                className="inline-block"
               />
-              <span className="ms-1 text-sm font-medium text-white">
-                4-Bedroom
-              </span>
-            </span>
-            <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
-              <img
-                src="/property/icons/bathroom.svg"
-                alt=""
-                className="inline-block"
-              />
-              <span className="ms-1 text-sm font-medium text-white">
-                3-Bathroom
-              </span>
-            </span>
-            <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
-              <img
-                src="/property/icons/villa.svg"
-                alt=""
-                className="inline-block"
-              />
-              <span className="ms-1 text-sm font-medium text-white">Villa</span>
-            </span>
-          </div>
-          <div className="flex items-start justify-between mt-5 gap-2 xl:gap-10">
-            <div className="">
-              <h2 className="text-grey-60 font-meduim text-sm">Price</h2>
-              <h2 className="font-semibold text-xl text-white">$550,000</h2>
+              <h2 className="mt-5 text-white text-xl font-semibold">
+                Metropolitan Haven
+              </h2>
+              <p className="mt-1 text-grey-60 font-medium">
+                A chic and fully-furnished 2-bedroom apartment with panoramic...
+                <a
+                  href=""
+                  className="text-white underline text-sm ms-1 inline-block"
+                >
+                  Read More
+                </a>
+              </p>
+              <div className="space-x-1 space-y-2 mt-5">
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bedroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    2-Bedroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bathroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    2-Bathroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/villa.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">Villa</span>
+                </span>
+              </div>
+              <div className="flex items-start justify-between mt-5 gap-2 xl:gap-10">
+                <div className="">
+                  <h2 className="text-grey-60 font-meduim text-sm">Price</h2>
+                  <h2 className="font-semibold text-xl text-white">$550,000</h2>
+                </div>
+                <div className="w-full">
+                  <button className="w-full text-sm text-white font-medium  px-5 py-3.5 rounded-[8px] bg-purple-60">
+                    View Property Details
+                  </button>
+                </div>
+              </div>
             </div>
-            <div className="w-full">
-              <button className="w-full text-sm text-white font-medium  px-5 py-3.5 rounded-[8px] bg-purple-60">
-                View Property Details
-              </button>
+          </div>
+          <div className="embla__slide">
+            <div className="p-5 border border-grey-15 rounded-[12px] ">
+              <img
+                src="/property/property (3).png"
+                className="object-cover rounded-[10px] h-[255px] w-full"
+                alt=""
+              />
+              <h2 className="mt-5 text-white text-xl font-semibold">
+                Rustic Retreat Cottage
+              </h2>
+              <p className="mt-1 text-grey-60 font-medium">
+                An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
+                <a
+                  href=""
+                  className="text-white underline text-sm inline-block ms-1"
+                >
+                  Read More
+                </a>
+              </p>
+              <div className="space-x-1 space-y-2 mt-5">
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bedroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    4-Bedroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bathroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    3-Bathroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/villa.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">Villa</span>
+                </span>
+              </div>
+              <div className="flex items-start justify-between mt-5 gap-2 xl:gap-10">
+                <div className="">
+                  <h2 className="text-grey-60 font-meduim text-sm">Price</h2>
+                  <h2 className="font-semibold text-xl text-white">$550,000</h2>
+                </div>
+                <div className="w-full">
+                  <button className="w-full text-sm text-white font-medium  px-5 py-3.5 rounded-[8px] bg-purple-60">
+                    View Property Details
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+          <div className="embla__slide">
+            <div className="p-5 border border-grey-15 rounded-[12px] ">
+              <img
+                src="/property/property (1).png"
+                className="object-cover rounded-[10px] h-[255px] w-full"
+                alt=""
+              />
+              <h2 className="mt-5 text-white text-xl font-semibold">
+                Seaside Serenity Villa
+              </h2>
+              <p className="mt-1 text-grey-60 font-medium">
+                A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
+                neighborhood...{" "}
+                <a href="" className="text-white underline text-sm">
+                  Read More
+                </a>
+              </p>
+              <div className="space-x-1 space-y-2 mt-5">
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bedroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    4-Bedroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bathroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    3-Bathroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/villa.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">Villa</span>
+                </span>
+              </div>
+              <div className="flex items-start justify-between mt-5 gap-2 xl:gap-10">
+                <div className="">
+                  <h2 className="text-grey-60 font-meduim text-sm">Price</h2>
+                  <h2 className="font-semibold text-xl text-white">$550,000</h2>
+                </div>
+                <div className="w-full">
+                  <button className="w-full text-sm text-white font-medium  px-5 py-3.5 rounded-[8px] bg-purple-60">
+                    View Property Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="embla__slide">
+            <div className="p-5 border border-grey-15 rounded-[12px] ">
+              <img
+                src="/property/property (2).png"
+                className="object-cover rounded-[10px] h-[255px] w-full"
+                alt=""
+              />
+              <h2 className="mt-5 text-white text-xl font-semibold">
+                Metropolitan Haven
+              </h2>
+              <p className="mt-1 text-grey-60 font-medium">
+                A chic and fully-furnished 2-bedroom apartment with panoramic...
+                <a
+                  href=""
+                  className="text-white underline text-sm ms-1 inline-block"
+                >
+                  Read More
+                </a>
+              </p>
+              <div className="space-x-1 space-y-2 mt-5">
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bedroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    2-Bedroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bathroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    2-Bathroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/villa.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">Villa</span>
+                </span>
+              </div>
+              <div className="flex items-start justify-between mt-5 gap-2 xl:gap-10">
+                <div className="">
+                  <h2 className="text-grey-60 font-meduim text-sm">Price</h2>
+                  <h2 className="font-semibold text-xl text-white">$550,000</h2>
+                </div>
+                <div className="w-full">
+                  <button className="w-full text-sm text-white font-medium  px-5 py-3.5 rounded-[8px] bg-purple-60">
+                    View Property Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="embla__slide">
+            <div className="p-5 border border-grey-15 rounded-[12px] ">
+              <img
+                src="/property/property (3).png"
+                className="object-cover rounded-[10px] h-[255px] w-full"
+                alt=""
+              />
+              <h2 className="mt-5 text-white text-xl font-semibold">
+                Rustic Retreat Cottage
+              </h2>
+              <p className="mt-1 text-grey-60 font-medium">
+                An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
+                <a
+                  href=""
+                  className="text-white underline text-sm inline-block ms-1"
+                >
+                  Read More
+                </a>
+              </p>
+              <div className="space-x-1 space-y-2 mt-5">
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bedroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    4-Bedroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/bathroom.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">
+                    3-Bathroom
+                  </span>
+                </span>
+                <span className="inline-block px-3.5 py-1.5 border border-grey-15 bg-grey-10 rounded-[28px]">
+                  <img
+                    src="/property/icons/villa.svg"
+                    alt=""
+                    className="inline-block"
+                  />
+                  <span className="ms-1 text-sm font-medium text-white">Villa</span>
+                </span>
+              </div>
+              <div className="flex items-start justify-between mt-5 gap-2 xl:gap-10">
+                <div className="">
+                  <h2 className="text-grey-60 font-meduim text-sm">Price</h2>
+                  <h2 className="font-semibold text-xl text-white">$550,000</h2>
+                </div>
+                <div className="w-full">
+                  <button className="w-full text-sm text-white font-medium  px-5 py-3.5 rounded-[8px] bg-purple-60">
+                    View Property Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </EmblaCarousel>
       </main>
-      <div className="flex items-start justify-between py-4 border-t border-grey-15">
-        <div className="font-medium">
-          <span className="text-white">01</span>
-          <span className="text-grey-60 ms-1.5">of 60</span>
-        </div>
-        <div>
-          <button className="w-[44px] h-[44px] border border-grey-15 rounded-full">
-            <svg
-              width="18"
-              height="16"
-              viewBox="0 0 18 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M17.4004 7.99999C17.4004 8.49705 16.9974 8.89999 16.5004 8.89999L3.73489 8.89999L8.72419 13.6512C9.08248 13.9958 9.09365 14.5655 8.74914 14.9238C8.40463 15.2821 7.83489 15.2933 7.47659 14.9487L0.876594 8.64874C0.700122 8.47905 0.600391 8.2448 0.600391 7.99999C0.600391 7.75517 0.700123 7.52092 0.876594 7.35124L7.47659 1.05124C7.83489 0.706725 8.40463 0.717896 8.74914 1.07619C9.09365 1.43449 9.08248 2.00422 8.72419 2.34874L3.73489 7.09999L16.5004 7.09999C16.9974 7.09999 17.4004 7.50293 17.4004 7.99999Z"
-                fill="#808080"
-              />
-            </svg>
-          </button>
-          <button className="w-[44px] h-[44px] bg-grey-10 border border-grey-15 rounded-full ms-3">
-            <svg
-              width="18"
-              height="16"
-              viewBox="0 0 18 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0.599609 8.00001C0.599609 7.50295 1.00255 7.10001 1.49961 7.10001L14.2651 7.10001L9.27581 2.34876C8.91752 2.00425 8.90634 1.43451 9.25086 1.07621C9.59537 0.717918 10.1651 0.706747 10.5234 1.05126L17.1234 7.35126C17.2999 7.52094 17.3996 7.75519 17.3996 8.00001C17.3996 8.24483 17.2999 8.47908 17.1234 8.64876L10.5234 14.9488C10.1651 15.2933 9.59537 15.2821 9.25086 14.9238C8.90635 14.5655 8.91752 13.9958 9.27581 13.6513L14.2651 8.90001L1.49961 8.90001C1.00255 8.90001 0.599609 8.49707 0.599609 8.00001Z"
-                fill="white"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
     </section>
   );
 }

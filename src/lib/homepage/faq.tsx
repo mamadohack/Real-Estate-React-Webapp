@@ -1,6 +1,7 @@
+import EmblaCarousel from "../utils/carousel";
 function Faq() {
   return (
-    <section className="px-5  lg:px-20">
+    <section className="px-5 pt-10 xl:px-20 2xl:px-40">
       <div className="space-x-2">
         <svg
           width="24"
@@ -121,7 +122,7 @@ function Faq() {
       <div className="mt-2">
         <div className="flex items-end justify-between mt-3 gap-10">
           <div>
-            <h2 className="font-semibold text-white text-[2.4rem]">
+            <h2 className="font-semibold text-white text-3xl xl:text-[2.4rem]">
               Frequently Asked Questions
             </h2>
             <span className="font-medium text-grey-60 leading-[150%] inline-block mt-2">
@@ -131,89 +132,100 @@ function Faq() {
             </span>
           </div>
 
-          <button className="text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
+          <button className="text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max hidden xl:inline-block">
             View All FAQ’s
           </button>
         </div>
       </div>
-      <main className="flex py-10 gap-2">
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
-          <h2 className=" text-white text-xl font-semibold">
-            How do I search for properties on Estatein?
-          </h2>
-          <p className=" text-grey-60 font-medium">
-            Learn how to use our user-friendly search tools to find properties
-            that match your criteria.
-          </p>
-          <button className=" text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
-            Read More
-          </button>
+      <main className="pt-10">
+        <EmblaCarousel>
+        <div className="embla__slide">
+          <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <h2 className=" text-white text-xl font-semibold">
+              How do I search for properties on Estatein?
+            </h2>
+            <p className=" text-grey-60 font-medium">
+              Learn how to use our user-friendly search tools to find properties
+              that match your criteria.
+            </p>
+            <button className=" text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
+              Read More
+            </button>
+          </div>
         </div>
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
-          <h2 className=" text-white text-xl font-semibold">
-            What documents do I need to sell my property through Estatein?
-          </h2>
-          <p className=" text-grey-60 font-medium">
-            Find out about the necessary documentation for listing your property
-            with us.
-          </p>
-          <button className=" text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
-            Read More
-          </button>
+        <div className="embla__slide">
+          <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <h2 className=" text-white text-xl font-semibold">
+              What documents do I need to sell my property through Estatein?
+            </h2>
+            <p className=" text-grey-60 font-medium">
+              Find out about the necessary documentation for listing your property
+              with us.
+            </p>
+            <button className=" text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
+              Read More
+            </button>
+          </div>
         </div>
-        <div className="w-1/3 p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
-          <h2 className=" text-white text-xl font-semibold min-h-[57px]">
-            How can I contact an Estatein agent?
-          </h2>
-          <p className=" text-grey-60 font-medium">
-            Discover the different ways you can get in touch with our
-            experienced agents.
-          </p>
-          <button className=" text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
-            Read More
-          </button>
+        <div className="embla__slide">
+          <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <h2 className=" text-white text-xl font-semibold min-h-[57px]">
+              How can I contact an Estatein agent?
+            </h2>
+            <p className=" text-grey-60 font-medium">
+              Discover the different ways you can get in touch with our
+              experienced agents.
+            </p>
+            <button className=" text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
+              Read More
+            </button>
+          </div>
         </div>
+        <div className="embla__slide">
+          <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <h2 className=" text-white text-xl font-semibold">
+              How do I search for properties on Estatein?
+            </h2>
+            <p className=" text-grey-60 font-medium">
+              Learn how to use our user-friendly search tools to find properties
+              that match your criteria.
+            </p>
+            <button className=" text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
+              Read More
+            </button>
+          </div>
+        </div>
+        <div className="embla__slide">
+          <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <h2 className=" text-white text-xl font-semibold">
+              What documents do I need to sell my property through Estatein?
+            </h2>
+            <p className=" text-grey-60 font-medium">
+              Find out about the necessary documentation for listing your property
+              with us.
+            </p>
+            <button className=" text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
+              Read More
+            </button>
+          </div>
+        </div>
+        <div className="embla__slide">
+          <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <h2 className=" text-white text-xl font-semibold min-h-[57px]">
+              How can I contact an Estatein agent?
+            </h2>
+            <p className=" text-grey-60 font-medium">
+              Discover the different ways you can get in touch with our
+              experienced agents.
+            </p>
+            <button className=" text-sm text-white px-5 py-3.5 border bg-grey-10 border-grey-15 rounded-[8px] min-w-max">
+              Read More
+            </button>
+          </div>
+        </div>
+        </EmblaCarousel>
+        
       </main>
-      <div className="flex items-start justify-between py-4 border-t border-grey-15">
-        <div className="font-medium">
-          <span className="text-white">01</span>
-          <span className="text-grey-60 ms-1.5">of 60</span>
-        </div>
-        <div>
-          <button className="w-[44px] h-[44px] border border-grey-15 rounded-full">
-            <svg
-              width="18"
-              height="16"
-              viewBox="0 0 18 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M17.4004 7.99999C17.4004 8.49705 16.9974 8.89999 16.5004 8.89999L3.73489 8.89999L8.72419 13.6512C9.08248 13.9958 9.09365 14.5655 8.74914 14.9238C8.40463 15.2821 7.83489 15.2933 7.47659 14.9487L0.876594 8.64874C0.700122 8.47905 0.600391 8.2448 0.600391 7.99999C0.600391 7.75517 0.700123 7.52092 0.876594 7.35124L7.47659 1.05124C7.83489 0.706725 8.40463 0.717896 8.74914 1.07619C9.09365 1.43449 9.08248 2.00422 8.72419 2.34874L3.73489 7.09999L16.5004 7.09999C16.9974 7.09999 17.4004 7.50293 17.4004 7.99999Z"
-                fill="#808080"
-              />
-            </svg>
-          </button>
-          <button className="w-[44px] h-[44px] bg-grey-10 border border-grey-15 rounded-full ms-3">
-            <svg
-              width="18"
-              height="16"
-              viewBox="0 0 18 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0.599609 8.00001C0.599609 7.50295 1.00255 7.10001 1.49961 7.10001L14.2651 7.10001L9.27581 2.34876C8.91752 2.00425 8.90634 1.43451 9.25086 1.07621C9.59537 0.717918 10.1651 0.706747 10.5234 1.05126L17.1234 7.35126C17.2999 7.52094 17.3996 7.75519 17.3996 8.00001C17.3996 8.24483 17.2999 8.47908 17.1234 8.64876L10.5234 14.9488C10.1651 15.2933 9.59537 15.2821 9.25086 14.9238C8.90635 14.5655 8.91752 13.9958 9.27581 13.6513L14.2651 8.90001L1.49961 8.90001C1.00255 8.90001 0.599609 8.49707 0.599609 8.00001Z"
-                fill="white"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
     </section>
   );
 }
