@@ -1,7 +1,7 @@
 function footer() {
   return (
     <section>
-      <div className="px-5 py-10 xl:px-20 2xl:px-40 relative overflow-hidden">
+      <div className="px-5 py-10 xl:px-12 2xl:px-40 relative overflow-hidden">
         <img
           src="/footer/footer-1bgxl.png"
           className="absolute left-0 bottom-0 hidden xl:block"
@@ -36,7 +36,7 @@ function footer() {
           </button>
         </div>
       </div>
-      <div className="py-10 xl:py-20 xl:px-20 2xl:px-40 bg-grey-08  grid grid-cols-2 xl:grid-cols-[repeat(6,auto)] justify-between px-5 gap-y-5 xl:gap-x-5">
+      <div className="py-10 xl:py-20 xl:px-12 2xl:px-40 bg-grey-08 grid grid-cols-2 xl:grid-cols-[repeat(6,auto)] justify-between px-5 gap-y-5 xl:gap-x-5">
         <div className="col-span-2 xl:col-span-1 xl:w-[280px]">
           <h2>
             <a href="" className="">
@@ -197,7 +197,7 @@ function footer() {
           </div>
         </div>
       </div>
-      <div className="flex px-5 xl:px-20 2xl:px-40 py-5 justify-between bg-grey-10 items-center flex-col-reverse gap-5 xl:flex-row">
+      <div className="flex px-5 xl:px-12 2xl:px-40 py-5 justify-between bg-grey-10 items-center flex-col-reverse gap-5 xl:flex-row">
         <div className="text-sm text-white font-medium text-center">
           <a href="" className="block xl:inline-block">
             @2023 Estatein. All Rights Reserved.

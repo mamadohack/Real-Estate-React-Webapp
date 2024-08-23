@@ -1,7 +1,7 @@
 import EmblaCarousel from "../utils/carousel";
 function Faq() {
   return (
-    <section className="px-5 pt-10 xl:px-20 2xl:px-40">
+    <section className="px-5 pt-10 xl:px-12 2xl:px-40">
       <div className="space-x-2">
         <svg
           width="24"

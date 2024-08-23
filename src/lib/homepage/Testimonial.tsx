@@ -1,7 +1,7 @@
 import EmblaCarousel from "../utils/carousel";
 function Testimonial() {
   return (
-    <section className="px-5 pt-10 xl:px-20 2xl:px-40">
+    <section className="px-5 pt-10 xl:px-12 2xl:px-40">
       <div className="space-x-2">
         <svg
           width="24"
@@ -140,7 +140,7 @@ function Testimonial() {
       <main className="pt-10 ">
         <EmblaCarousel>
           <div className="embla__slide">
-            <div className="p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <div className="p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-full">
               <div className="gap-3 flex">
                 <span className="rounded-full border border-grey-15 p-2 bg-grey-10">
                   <svg
@@ -240,7 +240,7 @@ function Testimonial() {
             </div>
           </div>
           <div className="embla__slide">
-            <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-full">
               <div className="gap-3 flex">
                 <span className="rounded-full border border-grey-15 p-2 bg-grey-10">
                   <svg
@@ -340,7 +340,7 @@ function Testimonial() {
             </div>
           </div>
           <div className="embla__slide">
-            <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-full">
               <div className="gap-3 flex">
                 <span className="rounded-full border border-grey-15 p-2 bg-grey-10">
                   <svg
@@ -440,7 +440,7 @@ function Testimonial() {
             </div>
           </div>
           <div className="embla__slide">
-            <div className="p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <div className="p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-full">
               <div className="gap-3 flex">
                 <span className="rounded-full border border-grey-15 p-2 bg-grey-10">
                   <svg
@@ -540,7 +540,7 @@ function Testimonial() {
             </div>
           </div>
           <div className="embla__slide">
-            <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-full">
               <div className="gap-3 flex">
                 <span className="rounded-full border border-grey-15 p-2 bg-grey-10">
                   <svg
@@ -640,7 +640,7 @@ function Testimonial() {
             </div>
           </div>
           <div className="embla__slide">
-            <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-[270px]">
+            <div className=" p-5 border border-grey-15 rounded-[12px] flex flex-col justify-between items-start min-h-full">
               <div className="gap-3 flex">
                 <span className="rounded-full border border-grey-15 p-2 bg-grey-10">
                   <svg

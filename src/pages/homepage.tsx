@@ -6,13 +6,13 @@ import Faq from "../lib/homepage/faq";
 import Footer from "../lib/footer/footer";
 function HomePage() {
   return (
-    <div className="bg-grey-08">
-      <NavBar></NavBar>
+    <div >
+      
       <Hero></Hero>
       <Properties></Properties>
       <Testimonial></Testimonial>
       <Faq></Faq>
-      <Footer></Footer>
+      
     </div>
   );
 }

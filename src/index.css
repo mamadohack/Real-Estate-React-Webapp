@@ -83,3 +83,26 @@ svg {
   position: absolute;
   width: 30px;
 }
+
+.gredient {
+  background: linear-gradient(
+    135deg,
+    rgba(112, 59, 247, 1) 0%,
+    rgba(112, 59, 247, 0.4) 25%,
+    transparent 56%
+  );
+}
+.btn-gradient-2 {
+  background: linear-gradient(#141414, #141414) padding-box,
+              linear-gradient(135deg,#703BF7 0%, #262626 20%) border-box;
+  border: 2px solid transparent;
+}
+
+.gredientt {
+  background: linear-gradient(
+    135deg,
+    rgba(112, 59, 247, 0.4) 0%,
+    rgba(112, 59, 247, 0.2) 20%,
+    transparent 50%
+  );
+}

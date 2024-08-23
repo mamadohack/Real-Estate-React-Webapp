@@ -2,29 +2,8 @@ import "./hero.css";
 function Hero() {
   return (
     <section id="hero" className="bg-grey-08 ">
-      <div className="flex gap-x-10 flex-wrap xl:flex-nowrap xl:ps-20 px-4 xl:pe-0 2xl:ps-40 items-center justify-center xl:justify-between py-5 xl:py-0">
+      <div className="flex gap-x-10 flex-wrap xl:flex-nowrap xl:ps-12 px-4 xl:pe-0 2xl:ps-40 items-center justify-center xl:justify-between py-5 xl:py-0">
         <div className="xl:w-1/2 xl:pt-10 pt-10 order-2 xl:order-1">
-          {/* <div className='relative max-w-[300px]'>
-         <svg className='bg-red-900 ' xmlns="http://www.w3.org/2000/svg" xmlLang="en" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
-        <title>Circular Text Path</title>
-        <defs>
-          <path id="textcircle" d="M250,400
-                       a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
-        </defs>
-        <g className="textcircle">
-          <text textLength="940">
-            <textPath 
-                      xlinkHref="#textcircle" 
-                      aria-label="CSS & SVG are awesome" 
-                      textLength="940">
-             ✨ Discover Your Dream Property | ✨ Discover Your Dream Property |&#160;
-            </textPath>
-            
-          </text>
-        </g>
-      </svg>
-      <div className='w-32 h-32 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white'></div>
-         </div> */}
           <h2 className="font-semibold text-3xl xl:text-[2.9rem] text-white leading-[120%]">
             Discover Your Dream Property with Estatein
           </h2>
